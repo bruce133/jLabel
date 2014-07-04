@@ -121,7 +121,7 @@
 				.css({
 					'position'		: 'relative',
 					'z-index'		: '100',
-					'margin-right'	: -$label.width(),
+					'margin-right' 	: -($label.get(0).getBoundingClientRect().width + 0.01) + 'px',
 					'left'			: opts.xShift + parseInt($input.css("padding-left")) + 'px',
 					'top'			: opts.yShift + 'px'
 				});
